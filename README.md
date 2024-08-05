@@ -1,3 +1,5 @@
+# Lecture 10: React Native with Firebase
+
 ### Prerequisites:
 
 1. **Node.js** installed
@@ -100,7 +102,6 @@ export default function AppNavigator() {
     </NavigationContainer>
   );
 }
-
 ```
 
 ### Step 5: Create Screens
@@ -160,7 +161,6 @@ export default function HomeScreen({ navigation }) {
     </View>
   );
 }
-
 ```
 
 #### AddBookScreen.js
@@ -204,7 +204,6 @@ export default function AddBookScreen({ navigation }) {
     </View>
   );
 }
-
 ```
 
 ### Step 6: Integrate Navigation in App.js
@@ -218,7 +217,6 @@ import AppNavigator from "./navigation";
 export default function App() {
   return <AppNavigator />;
 }
-
 ```
 
 ### Step 7: Run Your App
