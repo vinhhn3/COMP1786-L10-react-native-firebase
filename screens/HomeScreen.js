@@ -8,12 +8,21 @@ export default function HomeScreen({ navigation }) {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
+    // Create a reference to the "books/" node in the Firebase Realtime Database
     const booksRef = ref(database, "books/");
+
+    // Set up a listener on the booksRef reference
     onValue(booksRef, (snapshot) => {
+      // Retrieve the data from the snapshot
       const data = snapshot.val();
+
+      // Convert the data object into an array of book objects
+      // Each book object includes an id property (the key) and the rest of the book details
       const bookList = data
         ? Object.keys(data).map((key) => ({ id: key, ...data[key] }))
         : [];
+
+      // Update the state with the new list of books
       setBooks(bookList);
     });
   }, []);
