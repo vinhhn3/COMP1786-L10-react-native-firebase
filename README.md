@@ -11,8 +11,8 @@
 First, create a new Expo project:
 
 ```bash
-npx create-expo-app comp1786-l10-react-native-firebase --template blank BookManager
-cd comp1786-l10-react-native-firebase
+npx create-expo-app BookManager --template blank 
+cd BookManager
 ```
 
 ### Step 2: Install Required Dependencies
