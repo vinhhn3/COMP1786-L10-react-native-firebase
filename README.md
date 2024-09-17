@@ -234,3 +234,8 @@ Your application should now allow you to create, list, and delete book items usi
 ![1722844848727](image/README/1722844848727.png)
 
 ![1722844859003](image/README/1722844859003.png)
+
+### Exercise
+
+- Create the `BookDetailsScreen` to display all information of the book when User clicks on the item in `HomeScreen`
+- Create the `SearchScreen` to search books. It will call the Firebase to find and display the result
